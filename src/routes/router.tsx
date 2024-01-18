@@ -5,6 +5,7 @@ import { Order } from '@pages/Order';
 import { Home } from '@pages/Home';
 import { createBrowserRouter } from 'react-router-dom';
 import { Layout } from '@pages/Layout';
+import { AutoNavigateToHome } from '@components/common/AutoNavigate';
 
 const router = createBrowserRouter([
   {
@@ -22,11 +23,19 @@ const router = createBrowserRouter([
       },
       {
         path: PATH.COMPLETE,
-        element: <Complete />,
+        element: (
+          <AutoNavigateToHome>
+            <Complete />
+          </AutoNavigateToHome>
+        ),
       },
       {
         path: PATH.ERROR,
-        element: <Error />,
+        element: (
+          <AutoNavigateToHome>
+            <Error />
+          </AutoNavigateToHome>
+        ),
       },
     ],
   },
