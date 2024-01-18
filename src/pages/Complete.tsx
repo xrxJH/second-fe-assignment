@@ -1,11 +1,12 @@
 import { flexColumn } from '@styles/customStyles';
 import { styled } from 'styled-components';
+import { ReactComponent as CheckFilledIcon } from '@assets/CheckFilled.svg';
 
 export const Complete = () => {
   return (
     <Wrapper>
       <ColumnBox>
-        logo
+        <CheckFilledIcon />
         <HelpText>주문이 완료되었습니다.</HelpText>
       </ColumnBox>
     </Wrapper>

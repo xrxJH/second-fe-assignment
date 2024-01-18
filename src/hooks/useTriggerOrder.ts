@@ -2,6 +2,7 @@ import { PATH } from '@constants/path';
 import { useResetRecoilContext } from '@context/resetRecoilContext';
 import { useNavigate } from 'react-router-dom';
 import { useState, useRef } from 'react';
+import { randomizeOrderResult } from '@utils/randomizeOrderResult';
 
 export const useTriggerOrder = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ export const useTriggerOrder = () => {
     }
 
     timeoutRef.current = window.setTimeout(() => {
-      if (Math.random() > 0.5) {
+      if (randomizeOrderResult()) {
         navigate(PATH.COMPLETE, { state: { from: 'order' }, replace: true });
       } else {
         navigate(PATH.ERROR, { state: { from: 'order' }, replace: true });
