@@ -1,5 +1,4 @@
-import { END_POINT } from '@constants/endpoint';
-import { fetcher } from '@service/fetcher';
+import { getItems } from '@service/item/item';
 import { atom, selector } from 'recoil';
 
 export const itemState = atom<Item[]>({
@@ -10,8 +9,11 @@ export const itemState = atom<Item[]>({
 export const itemQuery = selector({
   key: 'itemQuery',
   get: async () => {
-    const data = await fetcher.get(END_POINT.items);
-    // 필요한 경우 여기에서 data를 가공하여 반환
+    const delay = (duration: number) =>
+      new Promise((resolve) => setTimeout(resolve, duration));
+    await delay(1000);
+
+    const data = await getItems();
     return data;
   },
 });

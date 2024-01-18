@@ -15,8 +15,6 @@ export const useTriggerOrder = () => {
     }
 
     timeoutRef.current = window.setTimeout(() => {
-      setIsLoading(true);
-
       if (Math.random() > 0.5) {
         navigate(PATH.COMPLETE, { state: { from: 'order' }, replace: true });
       } else {
@@ -27,6 +25,7 @@ export const useTriggerOrder = () => {
   };
 
   const triggerOrder = () => {
+    setIsLoading(true);
     clearAndRestartTimer();
   };
 
