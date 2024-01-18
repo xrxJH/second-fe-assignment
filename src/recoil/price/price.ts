@@ -5,7 +5,6 @@ import { counterIdsState, counterStateFamily } from '@recoil/counter/atom';
 export const useItemPrice = (id: string, priceData: number) => {
   const [, setPrice] = useRecoilState(priceStateFamily(id));
   setPrice(priceData);
-  console.log('priceData', priceData);
 };
 
 export const totalPriceSelector = selector({

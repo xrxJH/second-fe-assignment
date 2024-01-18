@@ -21,7 +21,6 @@ export const Panel = () => {
   const totalPrice = useRecoilValue(totalPriceSelector);
   const formattedPrice = formatPrice(totalPrice);
   const { modalRef, openModal, closeModal } = useModal();
-  //초기화해주는거 여기 옮겨놓기
 
   const blocker = useBlocker(
     ({ currentLocation, nextLocation }) =>
@@ -52,7 +51,6 @@ export const Panel = () => {
     closeModal();
   };
 
-  // 뒤로가기 감지하면 주문취소 alert
   return (
     <>
       <Wrapper>
