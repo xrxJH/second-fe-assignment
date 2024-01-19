@@ -58,7 +58,7 @@ https://github.com/xrxJH/second-fe-assignment/assets/157004345/7cfcc5c4-c8aa-459
 - useBlocker() 를 통해 특정 조건에 부합하지 않을 때 모달을 띄워 사용자에게 주문 처리 프로세스의 진행을 선택할 수 있도록 했습니다.
 
 ## 트러블슈팅
-#### 리코일 상태 초기화
+#### [리코일 상태 초기화](https://github.com/xrxJH/second-fe-assignment/blob/main/src/context/resetRecoilContext.ts)
 배경: useResetRecoilState()를 통해 상태 초기화가 안되는 버그     
 해결: Recoil은 Recoil Root가 mount, unmount시에 초기화 된다는 것을 알게 되었고 남아있는 시간과 간단한 앱이라는 점을 고려, Context API로 App전체를 감싼 상태를 만들어 제어했습니다.
 주문 처리 완료시, 혹은 사용자가 주문을 취소할 때 상태를 변경하여 atom들을 초기화합니다. 
