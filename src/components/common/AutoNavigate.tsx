@@ -7,6 +7,6 @@ type Props = {
 
 export const AutoNavigateToHome = ({ children }: Props) => {
   useCheckFrom(PATH.HOME, true);
-  useSetTimeoutNavigate(PATH.HOME, 3000, true);
+  useSetTimeoutNavigate(PATH.ORDER, 3000, true);
   return <>{children}</>;
 };
