@@ -1,5 +1,5 @@
 # second-fe-assignment
-두번째 프론트엔드 직무 과제 [반장창고]
+두번째 프론트엔드 직무 과제 [반장창고]    
 실행
 ```
 npm i
@@ -7,6 +7,12 @@ npm run server
 npm start
 ```
 ## 목차
+[기능구현](#기능구현)   
+  - [필수요구사항](#필수요구사항)
+  - [추가구현](#추가구현)
+    
+[트러블슈팅](#트러블슈팅)   
+[폴더구조](#폴더구조)   
 
 ## 데모
 ![데모gif](https://github.com/xrxJH/second-fe-assignment/assets/157004345/505294f7-90f3-4e05-b0df-bd25dafbcf98)
@@ -57,6 +63,78 @@ https://github.com/xrxJH/second-fe-assignment/assets/157004345/7cfcc5c4-c8aa-459
 
 ## 기술스택
 - `React`, `TypeScript`, `Styled-Components`, `Recoil`, `React Context API`
+
+## 폴더구조
+```
+📦src
+ ┣ 📂assets
+ ┃ ┣ 📜CheckFilled.svg
+ ┃ ┣ 📜logo-L.svg
+ ┃ ┗ 📜logo-S.svg
+ ┣ 📂components
+ ┃ ┣ 📂common
+ ┃ ┃ ┣ 📜AutoNavigate.tsx
+ ┃ ┃ ┣ 📜Button.tsx
+ ┃ ┃ ┗ 📜Modal.tsx
+ ┃ ┗ 📂pages
+ ┃ ┃ ┗ 📂order
+ ┃ ┃ ┃ ┣ 📂product
+ ┃ ┃ ┃ ┃ ┣ 📜ProductItem.tsx
+ ┃ ┃ ┃ ┃ ┗ 📜ProductList.tsx
+ ┃ ┃ ┃ ┣ 📜Chip.tsx
+ ┃ ┃ ┃ ┣ 📜Header.tsx
+ ┃ ┃ ┃ ┣ 📜ItemCounter.tsx
+ ┃ ┃ ┃ ┣ 📜OrderLayout.tsx
+ ┃ ┃ ┃ ┗ 📜Panel.tsx
+ ┣ 📂constants
+ ┃ ┣ 📜endpoint.ts
+ ┃ ┗ 📜path.ts
+ ┣ 📂context
+ ┃ ┗ 📜resetRecoilContext.ts
+ ┣ 📂db
+ ┃ ┗ 📜db.json
+ ┣ 📂hooks
+ ┃ ┣ 📜useCheckFrom.ts
+ ┃ ┣ 📜useModal.ts
+ ┃ ┣ 📜useSetTimeout.ts
+ ┃ ┗ 📜useTriggerOrder.ts
+ ┣ 📂pages
+ ┃ ┣ 📜Complete.tsx
+ ┃ ┣ 📜Error.tsx
+ ┃ ┣ 📜Home.tsx
+ ┃ ┣ 📜Layout.tsx
+ ┃ ┣ 📜Loading.tsx
+ ┃ ┗ 📜Order.tsx
+ ┣ 📂recoil
+ ┃ ┣ 📂counter
+ ┃ ┃ ┣ 📜atom.ts
+ ┃ ┃ ┗ 📜counter.ts
+ ┃ ┣ 📂item
+ ┃ ┃ ┣ 📜atom.ts
+ ┃ ┃ ┗ 📜useGetItems.ts
+ ┃ ┗ 📂price
+ ┃ ┃ ┣ 📜atom.ts
+ ┃ ┃ ┗ 📜price.ts
+ ┣ 📂routes
+ ┃ ┗ 📜router.tsx
+ ┣ 📂service
+ ┃ ┣ 📂item
+ ┃ ┃ ┗ 📜item.ts
+ ┃ ┗ 📜fetcher.ts
+ ┣ 📂styles
+ ┃ ┣ 📜customStyles.ts
+ ┃ ┣ 📜designSystem.ts
+ ┃ ┗ 📜globalStyles.ts
+ ┣ 📂types
+ ┃ ┣ 📜item.d.ts
+ ┃ ┗ 📜theme.d.ts
+ ┣ 📂utils
+ ┃ ┣ 📜formatPrice.ts
+ ┃ ┗ 📜randomizeOrderResult.ts
+ ┣ 📜App.tsx
+ ┣ 📜index.tsx
+ ┗ 📜react-app-env.d.ts
+```
 
 ## 회고
 좋았던 점
