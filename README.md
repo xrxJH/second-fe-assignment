@@ -9,11 +9,17 @@ npm start
 ## 목차
 
 ## 데모
+![데모gif](https://github.com/xrxJH/second-fe-assignment/assets/157004345/505294f7-90f3-4e05-b0df-bd25dafbcf98)
+
+
+https://github.com/xrxJH/second-fe-assignment/assets/157004345/7cfcc5c4-c8aa-4595-9ebd-fa2870e98b6e
+
 
 ## 기능구현
 ### 필수요구사항
 #### 라우트
 - '주문하러 가기' 버튼을 클릭하면 /order 페이지로 이동합니다.
+- /order 페이지의 헤더 로고를 클릭하면 '/' 페이지로 이동합니다.
 
 #### 데이터 페치
 - 로딩상태를 표시하기 위해 1초의 지연시간을 설정했습니다.
