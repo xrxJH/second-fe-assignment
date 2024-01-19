@@ -2,6 +2,8 @@
 두번째 프론트엔드 직무 과제 [반장창고]    
 실행
 ```
+git clone https://github.com/xrxJH/second-fe-assignment.git
+
 npm i
 npm run server
 npm start
