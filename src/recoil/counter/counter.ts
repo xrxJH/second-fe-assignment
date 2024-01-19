@@ -44,11 +44,5 @@ export const totalCounterValue = selector({
     return counterIds.reduce((total: number, id: string) => {
       return total + get(counterStateFamily(id));
     }, 0);
-  }, // 모든 값을 초기화
-  // set: ({ set }) => {
-  //   const counterIds = set(counterIdsState, []);
-  //   counterIds.forEach((id: string) => {
-  //     set(counterStateFamily(id), 0);
-  //   });
-  // },
+  },
 });

@@ -39,21 +39,4 @@ const ColumnBox = styled.div`
   justify-content: center;
   gap: 41px;
 
-  color: ${({ theme: { colors } }) =>
-    colors.white}; // Todo logo 추가시 지워야함
 `;
-
-// const Button = styled.div`
-//   width: 172px;
-//   height: 88px;
-//   cursor: pointer;
-//   background: ${({ theme: { colors } }) => colors.white};
-//   border-radius: ${({ theme: { radius } }) => radius.large20};
-//   color: ${({ theme: { colors } }) => colors.black};
-//   font: ${({ theme: { fonts } }) => fonts.displayL};
-
-//   ${flexColumn};
-//   align-items: center;
-//   justify-content: center;
-//   flex-shrink: 0;
-// `;
